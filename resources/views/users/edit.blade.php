@@ -24,7 +24,7 @@
             @enderror
             <div class="mb-3">
                 <label for="address" class="form-label">Address</label>
-                <input  class="form-control" value="{{ old('address') ?? $user->address }}" name="address" id="address">
+                <textarea class="form-control" name="address" id="address">{{ old('address') ?? $user->address }}</textarea>
             </div>
             @error('address')
                 <div class="text-danger">{{ $message }}</div>
